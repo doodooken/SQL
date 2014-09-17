@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_Name"
+        android:layout_alignParentLeft="true"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/edt_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edt_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_Name"
+        android:layout_below="@+id/edt_Name"
+        android:layout_marginTop="16dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edt_Blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_Age"
+        android:layout_below="@+id/edt_Age"
+        android:layout_marginTop="25dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edt_Birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_Country"
+        android:layout_below="@+id/edt_Country"
+        android:layout_marginTop="22dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edt_Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_Blood"
+        android:layout_below="@+id/edt_Blood"
+        android:layout_marginTop="24dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_Age"
+        android:layout_alignParentLeft="true"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_Blood"
+        android:layout_alignParentLeft="true"
+        android:text="Blood Group" />
+
+    <EditText
+        android:id="@+id/edt_National"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_Birthday"
+        android:layout_below="@+id/edt_Birthday"
+        android:layout_marginTop="27dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_Birthday"
+        android:layout_alignParentLeft="true"
+        android:text="Country" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_Birthday"
+        android:layout_alignParentLeft="true"
+        android:text="Birthday" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_National"
+        android:layout_alignParentLeft="true"
+        android:text="Nationality" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_National"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/textView6"
+        android:text="Save" />
+
+</RelativeLayout>
